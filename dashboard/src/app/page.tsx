@@ -5,13 +5,21 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-background text-foreground font-sans">
       {/* Nav */}
       <nav className="flex items-center justify-between px-8 py-6 border-b border-foreground/5">
-        <span className="text-sm font-medium tracking-tight opacity-80">briefd</span>
-        <Link
-          href="/login"
-          className="text-sm text-foreground/50 hover:text-foreground transition-colors"
-        >
-          Sign in →
-        </Link>
+        <span className="text-sm font-medium tracking-tight opacity-80">Limina</span>
+        <div className="flex items-center gap-6">
+          <Link
+            href="/about"
+            className="text-sm text-foreground/50 hover:text-foreground transition-colors"
+          >
+            About
+          </Link>
+          <Link
+            href="/login"
+            className="text-sm text-foreground/50 hover:text-foreground transition-colors"
+          >
+            Sign in →
+          </Link>
+        </div>
       </nav>
 
       {/* Hero */}
@@ -28,7 +36,7 @@ export default function Home() {
             <span className="text-foreground/40">distilled daily.</span>
           </h1>
           <p className="text-base text-foreground/50 leading-relaxed">
-            briefd reads your newsletters, extracts what matters, and delivers
+            Limina reads your newsletters, extracts what matters, and delivers
             a clean digest — automatically, every morning.
           </p>
         </div>
@@ -85,7 +93,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="flex items-center justify-center px-8 py-6 border-t border-foreground/5">
         <p className="text-xs text-foreground/25">
-          briefd · built for The 9th Street Journal and beyond
+          Limina · Lucy, Ishan & Mekhi's Intelligent Newsletter Aggregator
         </p>
       </footer>
     </div>

@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "briefd — newsletters, distilled",
-  description: "AI-powered newsletter digests delivered every morning.",
+  title: "Limina — newsletters, distilled",
+  description: "Lucy, Ishan & Mekhi's Intelligent Newsletter Aggregator.",
 };
 
 export default function RootLayout({
