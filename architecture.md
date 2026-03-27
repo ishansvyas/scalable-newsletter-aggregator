@@ -157,3 +157,9 @@ Realistic total: **4–5 days** for one developer.
 - **Billing** — no monetization layer. Add Stripe later if needed.
 
 This architecture can realistically support **20–30 organizations** before the manual onboarding process becomes the bottleneck — at which point you automate the GitHub Secrets step, and you're good for another 50+.
+
+
+
+Other notes:
+- **GitHub Secret reminder** — when you actually change settings via the UI, remember to also update the `ORGSLUG_CONFIG` secret in GitHub so the Actions workflow picks up the new values.
+- limina = Lucy, Ishan, Mekhi's Incredible Newsletter Aggregator
