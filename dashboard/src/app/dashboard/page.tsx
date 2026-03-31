@@ -82,11 +82,6 @@ export default function DashboardPage() {
     load()
   }, [router])
 
-  async function handleSignOut() {
-    await supabase.auth.signOut()
-    router.push('/login')
-  }
-
   async function handleTriggerRun() {
     setRunning(true)
     setRunMessage(null)
@@ -117,29 +112,13 @@ export default function DashboardPage() {
       <div className="mx-auto max-w-3xl space-y-8">
 
         {/* Header */}
-        <div className="flex items-center justify-between">
-          <div>
-            <h1 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-50">
-              Digest runs
-            </h1>
-            {orgName && (
-              <p className="text-sm text-zinc-500 mt-1">{orgName}</p>
-            )}
-          </div>
-          <div className="flex items-center gap-4">
-            <Link
-              href="/settings"
-              className="text-sm text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors"
-            >
-              Settings
-            </Link>
-            <button
-              onClick={handleSignOut}
-              className="text-sm text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors"
-            >
-              Sign out
-            </button>
-          </div>
+        <div>
+          <h1 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-50">
+            Digest runs
+          </h1>
+          {orgName && (
+            <p className="text-sm text-zinc-500 mt-1">{orgName}</p>
+          )}
         </div>
 
         {error && (

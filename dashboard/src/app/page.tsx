@@ -2,26 +2,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen bg-background text-foreground font-sans">
-      {/* Nav */}
-      <nav className="flex items-center justify-between px-8 py-6 border-b border-foreground/5">
-        <span className="text-sm font-medium tracking-tight opacity-80">Limina</span>
-        <div className="flex items-center gap-6">
-          <Link
-            href="/about"
-            className="text-sm text-foreground/50 hover:text-foreground transition-colors"
-          >
-            About
-          </Link>
-          <Link
-            href="/login"
-            className="text-sm text-foreground/50 hover:text-foreground transition-colors"
-          >
-            Sign in →
-          </Link>
-        </div>
-      </nav>
-
+    <div className="flex flex-col flex-1 font-sans">
       {/* Hero */}
       <main className="flex flex-1 flex-col items-center justify-center px-8 text-center gap-8">
         {/* Subtle pulse dot */}

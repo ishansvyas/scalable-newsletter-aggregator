@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
-import Link from 'next/link'
 import { supabase } from '@/lib/supabase'
 
 type OrgConfig = {
@@ -113,16 +112,10 @@ export default function SettingsPage() {
   return (
     <div className="min-h-full bg-zinc-50 dark:bg-black px-4 py-12">
       <div className="mx-auto max-w-2xl">
-        <div className="flex items-center justify-between mb-8">
+        <div className="mb-8">
           <h1 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-50">
             Settings
           </h1>
-          <Link
-            href="/dashboard"
-            className="text-sm text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors"
-          >
-            ← Back
-          </Link>
         </div>
 
         {error && (

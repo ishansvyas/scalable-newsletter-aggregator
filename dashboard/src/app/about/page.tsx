@@ -1,4 +1,3 @@
-import Link from "next/link";
 
 const team = [
   {
@@ -20,28 +19,7 @@ const team = [
 
 export default function About() {
   return (
-    <div className="flex flex-col min-h-screen bg-background text-foreground font-sans">
-      {/* Nav */}
-      <nav className="flex items-center justify-between px-8 py-6 border-b border-foreground/5">
-        <Link href="/" className="text-sm font-medium tracking-tight opacity-80 hover:opacity-100 transition-opacity">
-          Limina
-        </Link>
-        <div className="flex items-center gap-6">
-          <Link
-            href="/about"
-            className="text-sm text-foreground transition-colors"
-          >
-            About
-          </Link>
-          <Link
-            href="/login"
-            className="text-sm text-foreground/50 hover:text-foreground transition-colors"
-          >
-            Sign in →
-          </Link>
-        </div>
-      </nav>
-
+    <div className="flex flex-col flex-1 font-sans">
       <main className="flex flex-1 flex-col items-center px-8 py-24 gap-20">
         {/* Title */}
         <div className="flex flex-col items-center gap-4 text-center max-w-lg">
